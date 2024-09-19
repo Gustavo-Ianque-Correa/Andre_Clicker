@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <main>
+        <div class="abb">
+            <button id="Cookie" class="Cookie" onclick="preinx()"></button>
+
+            <andre id="Andre" class="Andre">
+
+            </andre>
+
+            <div id="Money" class="Mone2y">0</div>
+        </div>
+
+        <upgrade class="areaUp">
+
+            <div id="Up1" class="Up1" onclick="UpgradeAndre()">
+                André
+                <div id="Up1PP" class="Up1PP">0</div>
+                <div id="Uppcu" class="Uppcu">10</div>
+            </div>
+
+            <div id="Up2" class="Up1" onclick="UpgradePreinx()">
+                Preinx
+                <div id="Up2PP" class="Up1PP">0</div>
+                <div id="Uppcu2" class="Uppcu2">100</div>
+            </div>
+
+
+            <div id="Up3" class="Up1" onclick="UpgradeCazz()">
+                Cazz
+                <div id="Up3PP" class="Up1PP">0</div>
+                <div id="Uppcu3" class="Uppcu3">10</div>
+            </div>
+
+
+
+        </upgrade>
+
+
+    </main>
+
+
+    <script>
+
+        var money = document.querySelector('#Money').value;
+
+        var Up1PP = document.querySelector('#Up1PP').value;
+
+        var Up2pp = document.querySelector('#Up2PP').value;
+
+        var Up3PP = document.querySelector('#Up3PP').value;
+
+        var Uppcu3 = document.querySelector('#Uppcu3').value;
+
+        var Uppcu3 = 10;
+
+        var Up3PP = 0;
+
+        var UppCu = 10;
+
+        var Uppcu2 = 100;
+
+        var UpGeral = 1;
+
+        var Upptrue2 = false;
+
+        var Upptrue3 = false;
+
+
+        console.log(Upptrue2)
+
+        Up1PP = 0;
+        Up2PP = 0;
+        money = 0;
+
+       
+
+        function UpgradeCazz() {
+
+
+
+            if (money >= Uppcu3) {
+
+                Up3PP = Up3PP + 1
+
+                money = money - Uppcu3;
+
+                document.getElementById('Money').innerHTML = money;
+
+                document.getElementById('Up3PP').innerHTML = Up3PP;
+
+                document.getElementById('Uppcu3').innerHTML = Uppcu3;
+
+                console.log(Up3PP)
+
+                Upptrue3 = true;
+
+                console.log(Upptrue3)
+
+            }
+
+        }
+
+        if (Upptrue3 == true) {
+
+
+            setInterval(come, 1000);
+
+            function come() {
+
+                console.log('teste')
+
+            }
+            come()
+        }
+
+
+
+        function UpgradeAndre() {
+
+
+
+            if (money >= UppCu) {
+                Up1PP++
+                document.getElementById('Up1PP').innerHTML = Up1PP;
+                money = money - UppCu
+                document.getElementById('Money').innerHTML = money;
+
+
+                UppCu = UppCu * 2
+
+
+                document.getElementById('Uppcu').innerHTML = UppCu;
+                console.log(UppCu)
+
+
+                UpGeral = UpGeral + 1;
+            }
+
+
+        }
+
+
+        function UpgradePreinx() {
+
+            var uppreinx = 0
+            let Up2cd = 0
+
+            if (money >= Uppcu2) {
+
+
+                uppreinx++
+                Up2PP++
+
+                money = money - Uppcu2;
+
+                document.getElementById('Money').innerHTML = money;
+                Uppcu2 = Uppcu2 * 2;
+
+
+                document.getElementById('Uppcu2').innerHTML = Uppcu2;
+                document.getElementById('Up2PP').innerHTML = Up2PP;
+
+
+                Upptrue2 = true;
+                console.log(Upptrue2)
+
+            }
+
+
+
+            if (Upptrue2 == true) {
+
+                setInterval(tempo, 1000);
+
+
+
+                function tempo() {
+
+                    money = money + uppreinx;
+
+                    document.getElementById('Money').innerHTML = money;
+                }
+                tempo()
+            }
+
+        }
+
+
+        function preinx() {
+
+            Cookie = document.querySelector('#Cookie');
+
+            money = money + UpGeral
+
+            document.getElementById("Money").innerHTML = money;
+
+            console.log(money);
+
+        };
+
+    </script>
+
+</body>
+
+</html>

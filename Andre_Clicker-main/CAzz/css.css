@@ -1,0 +1,84 @@
+button{
+    padding: 200px;
+    top: 25%;
+    position: absolute;
+    border: none;
+    transition: 0.05s;
+    background-size: 550px;
+    background-repeat: no-repeat;
+    background-position: -65px;
+    border-radius: 200px;
+    background-image: url(Cookie.png);
+}
+
+
+button:active{
+    padding: 190px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.abb{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.Mone2y{
+
+    margin-bottom: 50px;
+    display: flex;
+    font-size: 100px;
+}
+
+
+.Up1:hover{
+    background-color: rgb(198, 198, 198);
+    cursor: pointer;
+}
+
+.Up1PP{
+    position: relative;
+    display: flex;
+    left: 10px;
+
+
+}
+
+.Uppcu{
+    position: relative;
+    display: flex;
+    left: 40px;
+    color: yellow;
+}
+
+.Uppcu3{
+    position: relative;
+    display: flex;
+    left: 40px;
+    color: yellow;
+}
+
+.Uppcu2{
+    position: relative;
+    display: flex;
+    left: 40px;
+    color: yellow;
+}
+
+.Up1{
+    top: 100px;
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    transition: 1s;
+    border: 1px solid black;
+    box-shadow: black 3px 2px 8px 0px;
+    background-color: darkgrey;
+    height: 75px;
+    width: 200px;
+}
