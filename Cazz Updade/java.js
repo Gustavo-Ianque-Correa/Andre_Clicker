@@ -11,7 +11,7 @@ var Uppcu3 = document.querySelector('#Uppcu3').value;
 
 var Cooknovo = document.getElementById('Cunovo');
 
-var Uppcu3 = 10;
+var Uppcu3 = 500;
 
 var Up3PP = 0;
 
@@ -28,13 +28,12 @@ var Upptrue3 = new Boolean(false)
 var Upptrue2 = false;
 
 var dinheiroMM = 0
-var ligado = false
 
+var ligado1 = false
 
+var ligado2 = false
 
-
-
-console.log(Upptrue2)
+var ligado3 = true
 
 Up1PP = 0;
 Up2PP = 0;
@@ -42,11 +41,13 @@ money = 0;
 
 
 
+
+
 function UpgradeCazz() {
 
 
 
-    if (money >= Uppcu3) {
+    if (money >= Uppcu3 + ligado2 == true) {
 
         Up3PP = Up3PP + 1
 
@@ -66,9 +67,11 @@ function UpgradeCazz() {
 
         console.log(Upptrue3)
 
+        ligado1 = true
+
     }
 
-    if (ligado == false) {
+    if (ligado1 == true , ligado2 == true , ligado3 == true) {
         cazz3()
 
     }
@@ -83,9 +86,10 @@ function cazz3() {
 
     setInterval(come, 2000);
 
-    ligado = true
+    ligado3 = false
 
     function come() {
+
         DinheiroAcu = DinheiroAcu + dinheiroMM;
 
 
@@ -154,6 +158,8 @@ function UpgradePreinx() {
 
         Upptrue2 = true;
         console.log(Upptrue2)
+
+       ligado2 = true
 
     }
 

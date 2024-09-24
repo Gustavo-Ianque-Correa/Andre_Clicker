@@ -31,10 +31,30 @@ main {
     justify-content: space-around;
 }
 
+.Coisas{
+    display: flex;
+}
+
 .abb {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nome{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+.nome:hover{
+
+    cursor: pointer;
+}
+
+input{
+    border: none;font-size: 30px;color: rgb(7, 7, 7);text-align: center;
 }
 
 .Mone2y {
@@ -46,7 +66,7 @@ main {
 
 
 .Up1:hover {
-    background-color: rgb(198, 198, 198);
+    transform: rotate(6deg);
     cursor: pointer;
 }
 
@@ -88,40 +108,48 @@ main {
     transition: 1s;
     border: 1px solid black;
     box-shadow: black 3px 2px 8px 0px;
-    background-color: darkgrey;
+    background-image: url(download.jpg);
+    margin-top: 10px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -58px;
     height: 75px;
     width: 200px;
+    border-radius: 20px;
 }
 
 
 
 .preinix {
     background-image: url(gato-bola-modelo-desenho-removebg-preview.png);
-    position: absolute;
-    padding: 150px;
+    padding: 100px;
     border-radius: 100px;
-    right: 750px;
-    top: 330px;
     display: none;
     cursor: pointer;
     background-position: center;
     background-size: 200px;
     background-repeat: no-repeat;
     justify-content: center;
+    position: absolute;
+    top: 650px;
 }
 
+.rebirth{
+    position: absolute;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 160px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    border:  1px solid black ;
+}
 
 .DinheiroPre{
     color: rgb(247, 119, 119);
-    font-size: 20px;
+    font-size: 50px;
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.Parede{
-    background-image: url(download.jpg);
-    height: 100%;
-    position: absolute;
-    width: 15px;
-    left: 650px;
-}
