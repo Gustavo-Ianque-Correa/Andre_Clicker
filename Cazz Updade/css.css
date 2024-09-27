@@ -28,7 +28,7 @@ button:active {
 
 main {
     display: flex;
-    justify-content: space-around;
+   flex-direction: column;
 }
 
 .Coisas{
@@ -137,13 +137,25 @@ input{
 .rebirth{
     position: absolute;
     color: aliceblue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 160px;
     height: 80px;
     display: flex;
     justify-content: center;
     background-color: blue;
     border:  1px solid black ;
+    align-items: center;
+    left: auto;
+    margin-top: 20px;
+    box-shadow: blue -2px 1px 20px 1px, #d200ff 1px 1px 20px 9px;
+    border-radius: 20px;
+    display: none;
+
+}
+
+.rebirth:hover{
+    cursor: pointer;
+    border-color: rgb(4, 4, 206);
 }
 
 .DinheiroPre{

@@ -11,13 +11,13 @@ var Uppcu3 = document.querySelector('#Uppcu3').value;
 
 var Cooknovo = document.getElementById('Cunovo');
 
-var Uppcu3 = 500;
+var Uppcu3 = 5;
 
 var Up3PP = 0;
 
 var UppCu = 10;
 
-var Uppcu2 = 100;
+var Uppcu2 = 10;
 
 var DinheiroAcu = 0
 
@@ -34,6 +34,8 @@ var ligado1 = false
 var ligado2 = false
 
 var ligado3 = true
+
+var ligado4 = false
 
 Up1PP = 0;
 Up2PP = 0;
@@ -71,7 +73,7 @@ function UpgradeCazz() {
 
     }
 
-    if (ligado1 == true , ligado2 == true , ligado3 == true) {
+    if (ligado1 == true, ligado2 == true, ligado3 == true) {
         cazz3()
 
     }
@@ -127,6 +129,7 @@ function UpgradeAndre() {
         document.getElementById('Uppcu').innerHTML = UppCu;
         console.log(UppCu)
 
+        ligado4 = true
 
         UpGeral = UpGeral + 1;
     }
@@ -159,7 +162,7 @@ function UpgradePreinx() {
         Upptrue2 = true;
         console.log(Upptrue2)
 
-       ligado2 = true
+        ligado2 = true
 
     }
 
@@ -185,7 +188,7 @@ function UpgradePreinx() {
 
 function preinx() {
 
-    console.log(Upptrue3)
+    console.log(ligado1, ligado2, ligado4)
 
     Cookie = document.querySelector('#Cookie');
 
@@ -196,3 +199,32 @@ function preinx() {
     console.log(money);
 
 };
+
+
+
+function repeat() {
+    for (let index = 0; index < 1; index++) {
+
+        console.log("preix")
+
+
+        if (ligado1 + ligado2 + ligado4) {
+            document.getElementById("rebirth").style.display = 'flex';
+            setTimeout(repeat , 1000)
+        }else{
+            document.getElementById("rebirth").style.display = 'none';
+            setTimeout(repeat, 1000)
+        }
+    
+    }    
+}repeat()
+
+
+
+
+
+
+function Rebirt() {
+
+
+}
